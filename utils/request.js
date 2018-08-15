@@ -4,7 +4,7 @@
  * @date 2018-08-14
  */
 
-import {mainHost} from '../config/envConfig.js';
+import {mainHost} from '../config/env-config.js';
 import httpServer from './http-server.js';
 
 // 获取token

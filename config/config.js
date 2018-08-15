@@ -4,7 +4,7 @@
  * @date 2018-08-14
  */
 
-import envConfig from './envConfig.js';
+import envConfig from './env-config.js';
 const { mainHost } = envConfig;
 
 // 默认接口出错弹窗文案
