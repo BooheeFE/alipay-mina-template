@@ -5,7 +5,7 @@
  */
 
 import {mainHost} from '../config/envConfig.js';
-import httpServer from './httpServer.js';
+import httpServer from './http-server.js';
 
 // 获取token
 let getToken = function(data) {
