@@ -86,7 +86,7 @@ let util = {
       my.downloadFile({
         url: onlineImageUrl,
         success: function(res) {
-          if (res.statusCode === 200) {
+          if (res.status === 200) {
             resolve(res.tempFilePath);
           }
         }
