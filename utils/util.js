@@ -98,7 +98,7 @@ let util = {
    */
   myRegExp: {
     isWeixin: (data, tips = '请填写正确的微信号') => {
-      let reg = /[1-9][0-9]{4,}|^[a-zA-Z]([-_a-zA-Z0-9]{5,19})+$/;
+      let reg = /^([1-9][0-9]{5,19})$|(^[a-zA-Z][-_a-zA-Z0-9]{5,19}$)/g;
       if (reg.test(data)) {
         return true;
       } else {
