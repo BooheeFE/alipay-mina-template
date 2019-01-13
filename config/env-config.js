@@ -24,6 +24,4 @@ const envConfig = {
   }
 };
 
-module.exports = {
-	mainHost: envConfig[env].mainHost
-};
+export default envConfig[env];
