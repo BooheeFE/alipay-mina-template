@@ -8,7 +8,11 @@ App({
   globalData: {
     token: ''
   },
-  onLaunch: function() {
-
+  onLaunch: function(options) {
+  	// 开发者工具启动参数请添加：env=qa 或 env=production
+    my.setStorageSync({
+      key: 'env',
+      data: options.query.env
+    });
   }
 })
